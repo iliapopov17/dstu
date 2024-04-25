@@ -394,9 +394,9 @@ _Fig 2. Second tree. With annotation info containing organisms names and manuall
 
 This is the best tree easily made with DSTU software
 
-|Original|DSTU|
-|--------|-------|
-|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/Reference%20tree.jpg">|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/second%20tree.png">|
+Let's take a look at the original tree again
+
+<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/Reference%20tree.jpg" width="75%">
 
 It can be seen that in original version authors did annotation manually and they made some mistakes in hosts annotation. DSTU software did not make this mistakes.
 
