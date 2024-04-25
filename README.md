@@ -2,6 +2,12 @@
 
 > Detailed Sequences for Trees Unblemished (DSTU) simplifies phylogenetic tree creation in microbiology and virology by facilitating sequence downloads from NCBI GenBank using accession numbers. It also reinstates organism names in trees constructed with IQ-TREE, retrieves host information about microorganisms, and prepares annotation datasets for iTOL.
 
+|The Good|The Bad|The Ugly|
+|--------|-------|--------|
+|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/second%20tree.png" width="100%">|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/third%20tree.png" width="100%">|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/first%20tree.png" width="100%">|
+
+DSTU allows easy and simple annotation of phylogenetic trees. The best tree contains information about the hosts from which the virus was isolated and the full names of the viruses. The so-so tree contains the same information, but is colour annotated with randomly generated colours. The worst tree contains only accession numbers on its leaves.
+
 ## Features
 ### Sequence Downloading
 - Facilitates the retrieval of sequences from NCBI GenBank using specified accession numbers.
@@ -11,10 +17,6 @@
 - Gathers comprehensive host data for each microorganism, including the host's phylogenetic order.
 ### Annotation Dataset Preparation for iTOL
 - Utilizes the collected host information to prepare detailed annotation datasets, optimizing visualization in iTOL.
-
-|The Good|The Bad|The Ugly|
-|--------|-------|--------|
-||||
 
 ## Installation
 
@@ -291,4 +293,111 @@ NC_055636.1	Rodentia
 NC_005225.1	ND
 NC_038939.1	Rodentia
 NC_038529.1	Rodentia
+```
+
+### Example of preparing info for iTOL
+
+**_Input_**
+
+```python
+unique_orders = get_unique_orders("demo_data/accession_order.txt")
+print(unique_orders)
+```
+
+**_Output_**
+
+```
+['Rodentia', 'ND', 'Eulipotyphla', 'Chiroptera', 'Squamata']
+```
+
+**_Input_**
+
+```python
+color_map = set_color_map("demo_data/accession_order.txt")
+print(color_map)
+```
+
+Interactive window will open and will ask to set HEX codes for each unique order
+
+**_Output_**
+
+```
+{'Rodentia': '#0ca20c', 'ND': '#ffffff', 'Eulipotyphla': '#0078ff', 'Chiroptera': '#000000', 'Squamata': '#ffa500'}
+```
+
+### Example of creating annotation dataset for iTOL
+
+#### Using the manually adjusted color map
+
+**_Input_**
+
+```python
+# Example usage:
+# To use with a user-defined color map:
+get_itol_dataset("demo_data/accession_organism.txt", "demo_data/accession_order.txt", "demo_data/dataset_for_iTOL.txt", color_map)
+```
+
+Input:
+1. input txt file with the list of accession numbers and organisms names
+2. input txt file with the list of accession numbers and phylogenetic order of microorganism host
+3. output file
+4. manually created color map
+
+**_Output_**
+
+```
+Colors were set by the user.
+The request has been fulfilled.
+```
+
+**_Input_**
+
+```python
+print_first_5_lines('demo_data/dataset_for_iTOL.txt')
+```
+
+**_Output_**
+
+```
+DATASET_COLORSTRIP
+SEPARATOR TAB
+DATASET_LABEL	Host Group Colors
+DATA
+NC_034519.1 Orthohantavirus khabarovskense	#0ca20c	Rodentia
+```
+
+#### Using randomly generated color map
+
+**_Input_**
+
+```python
+get_itol_dataset("demo_data/accession_organism.txt", "demo_data/accession_order.txt", "demo_data/dataset_for_iTOL_2.txt")
+```
+
+Input:
+1. input txt file with the list of accession numbers and organisms names
+2. input txt file with the list of accession numbers and phylogenetic order of microorganism host
+3. output file
+
+**_Output_**
+
+```
+Colors were not set, they were generated randomly.
+The request has been fulfilled.
+```
+
+**_Input_**
+
+```python
+print_first_5_lines('demo_data/dataset_for_iTOL_2.txt')
+```
+
+**_Output_**
+
+```
+DATASET_COLORSTRIP
+SEPARATOR TAB
+DATASET_LABEL	Host Group Colors
+DATA
+NC_034519.1 Orthohantavirus khabarovskense	#e31342	Rodentia
 ```
