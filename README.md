@@ -134,8 +134,22 @@ All downloads completed.
 ### What's next? Tree construction.
 
 Below used tree is based on demonstrational data. Tree construction is made in `tree_construction.ipynb` notebook.<br>
-The most important file is `demo_data/tree_ufb.treefile`
+The most important file is `demo_data/tree_ufb.treefile`. Upload it to iTOL for visualization.
 
+<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/Reference%20tree.jpg" width="75%">
+
+_Figure 1. Reference tree from the original paper_
+
+<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/first%20tree.png" width="75%">
+
+_Figure 2. Naked phylogenetic tree_
+
+This tree is naked.<br>
+There is no:<br>
+1. Annotation of the organisms name. There are only accession numbers that cannot say anything.
+2. The tree demonstrates phylogenetic relationships between different viruses. But there is no information about host organisms of that viruses.
+
+It is worth mentioning that the trees are literally identical. (Bootstrap values are even better in my variant).
 
 ### Example of returning organisms names to the tree with `get_organisms` function
 
@@ -366,6 +380,26 @@ DATA
 NC_034519.1 Orthohantavirus khabarovskense	#0ca20c	Rodentia
 ```
 
+#### Next steps
+
+1. Visit iTOL
+2. Upload `demo_data/modified_tree.treefile` file as the tree
+3. Upload `demo_data/dataset_for_iTOL.txt` as the annotation dataset
+
+<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/second%20tree.png" width="75%">
+
+https://itol.embl.de/export/95255816295731714078181
+
+_Fig 2. Second tree. With annotation info containing organisms names and manually adjusted colors indicating hosts phylogenetic order_
+
+This is the best tree easily made with DSTU software
+
+|Original|DSTU|
+|--------|-------|
+|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/Reference%20tree.jpg">|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/second%20tree.png">|
+
+It can be seen that in original version authors did annotation manually and they made some mistakes in hosts annotation. DSTU software did not make this mistakes.
+
 #### Using randomly generated color map
 
 **_Input_**
@@ -401,3 +435,17 @@ DATASET_LABEL	Host Group Colors
 DATA
 NC_034519.1 Orthohantavirus khabarovskense	#e31342	Rodentia
 ```
+
+#### Next steps
+
+1. Visit iTOL
+2. Upload `demo_data/modified_tree.treefile` file as the tree
+3. Upload `demo_data/dataset_for_iTOL_2.txt` as the annotation dataset
+
+<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/third%20tree.png" width="75%">
+
+https://itol.embl.de/export/95255816343181714079366
+
+_Fig 3. Third tree. With annotation info containing organisms names and randomly generated colors indicating hosts phylogenetic order_
+
+In this case random generation played a bad joke! Almost every color is the same. It will be much more convenient to adjust color map manually.
