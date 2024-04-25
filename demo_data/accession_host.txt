@@ -1,0 +1,39 @@
+NC_034519.1 Microtus maximowiczii
+NC_055636.1 Microtus agrestis
+NC_005225.1 ND
+NC_038939.1 Microtus pennsylvanicus
+NC_038529.1 Eothenomys miletus
+NC_034467.1 Eothenomys eleusis
+NC_034553.1 Oligoryzomys fulvescens (fulvous pygmy rice rat)
+NC_003468.2 ND
+NC_034515.1 Sigmodon alstoni (Alston's cotton rat)
+NC_038299.1 Oryzomys palustris (marsh rice rat)
+NC_077671.1 Peromyscus maniculatus
+NC_034403.1 Peromyscus beatae
+NC_038695.1 Scalopus aquaticus
+NC_034556.1 Eliurus majori
+LC553715.1 Bandicota indica
+NC_005238.1 ND
+NC_005235.1 Apodemus flavicollis
+NC_034517.1 Hylomyscus simus
+NC_006435.1 ND
+NC_005222.1 ND
+NC_055147.1 Stenocephalemys albipes
+NC_034560.1 Sorex roboratus
+NC_034485.1 Anourosorex squamipes
+NC_034407.1 Crocidura douceti
+NC_034399.1 Crocidura shantungensis
+NC_034402.1 Talpa europaea
+MG663536.1 Aselliscus stoliczkanus (Stoliczka's Asian trident bat)
+NC_038515.1 Taphozous melanopogon
+NC_078262.1 Hipposideros pomona
+NC_055632.1 Pteropus alecto
+NC_034401.1 Rousettus amplexicaudatus
+OR684449.1 Carollia perspicillata
+FJ593498.1 Talpa europaea
+KX512433.1 Talpa europaea
+NC_078485.1 Sorex caecutiens
+KX779126.1 Crocidura lasiura
+NC_034564.1 Crocidura lasiura strain Cixi-Cl-23
+NC_010707.1 ND
+NC_055170.1 Hemidactylus bowringii
