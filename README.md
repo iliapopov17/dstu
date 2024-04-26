@@ -21,7 +21,7 @@ DSTU allows easy and simple annotation of phylogenetic trees. The best tree cont
 ## Installation
 
 ```bash
-git clone https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished.git && cd Detailed-Sequences-for-Trees-Unblemished
+wget https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/releases/download/v0.5.0-alpha/DSTU.py
 ```
 
 ```bash
