@@ -450,3 +450,11 @@ NC_034519.1 Orthohantavirus khabarovskense	#e31342	Rodentia
 _Fig 4. Third tree. With annotation info containing organisms names and randomly generated colors indicating hosts phylogenetic order_
 
 In this case random generation played a bad joke! Almost every color is the same. It will be much more convenient to adjust color map manually.
+
+## Contributing
+Contributions are welcome! If you have any ideas, bug fixes, or enhancements, feel free to open an issue or submit a pull request.
+
+## Contact
+For any inquiries or support, feel free to contact me via [email](mailto:iljapopov17@gmail.com)
+
+Happy tree constructing! 🌳
