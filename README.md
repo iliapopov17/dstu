@@ -394,7 +394,7 @@ NC_034519.1 Orthohantavirus khabarovskense	#0ca20c	Rodentia
 
 <img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/second%20tree.jpg" width="75%">
 
-_Fig 2. Second tree. With annotation info containing organisms names and manually adjusted colors indicating hosts phylogenetic order_
+_Fig 3. Second tree. With annotation info containing organisms names and manually adjusted colors indicating hosts phylogenetic order_
 
 This is the best tree easily made with DSTU software
 
@@ -447,6 +447,6 @@ NC_034519.1 Orthohantavirus khabarovskense	#e31342	Rodentia
 
 <img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/third%20tree.jpg" width="75%">
 
-_Fig 3. Third tree. With annotation info containing organisms names and randomly generated colors indicating hosts phylogenetic order_
+_Fig 4. Third tree. With annotation info containing organisms names and randomly generated colors indicating hosts phylogenetic order_
 
 In this case random generation played a bad joke! Almost every color is the same. It will be much more convenient to adjust color map manually.
