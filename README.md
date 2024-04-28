@@ -13,7 +13,10 @@
 |--------|-------|--------|
 |<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/second%20tree.jpg" width="100%">|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/third%20tree.jpg" width="100%">|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/first%20tree.jpg" width="100%">|
 
-DSTU allows easy and simple annotation of phylogenetic trees. The best tree contains information about the hosts from which the virus was isolated and the full names of the viruses. The so-so tree contains the same information, but is colour annotated with randomly generated colours. The worst tree contains only accession numbers on its leaves.
+DSTU allows easy and simple annotation of phylogenetic trees. See the examples above:
+- The best tree contains information about the hosts from which the virus was isolated and the full names of the viruses.
+- The so-so tree contains the same information, but is colour annotated with randomly generated colours.
+- The worst tree contains only accession numbers on its leaves.
 
 ## Features
 ### Sequence Downloading
@@ -26,6 +29,8 @@ DSTU allows easy and simple annotation of phylogenetic trees. The best tree cont
 - Utilizes the collected host information to prepare detailed annotation datasets, optimizing visualization in iTOL.
 
 ## Installation
+
+> I plan to finish all the features of this tool and publish it to `conda` oneday!
 
 ```bash
 wget https://github.com/iliapopov17/dstu/releases/download/v0.5.0-alpha/DSTU.py
@@ -84,14 +89,13 @@ NC_038529
 
 **_Input_**
 
-```python
-get_sequences('iljapopov17@gmail.com', 'demo_data/accession_numbers.txt', 'genbank_sequences')
-```
-
-Input:
 1. email
 2. input txt file with the list of accession numbers
 3. output file
+
+```python
+get_sequences('iljapopov17@gmail.com', 'demo_data/accession_numbers.txt', 'genbank_sequences')
+```
 
 **_Output_**
 
@@ -162,14 +166,13 @@ It is worth mentioning that the trees are literally identical. (Bootstrap values
 
 **_Input_**
 
-```python
-get_organisms('iljapopov17@gmail.com', 'demo_data/accession_numbers.txt', 'demo_data/accession_organism.txt')
-```
-
-Input:
 1. email
 2. input txt file with the list of accession numbers
 3. output file
+
+```python
+get_organisms('iljapopov17@gmail.com', 'demo_data/accession_numbers.txt', 'demo_data/accession_organism.txt')
+```
 
 **_Output_**
 
@@ -196,14 +199,13 @@ NC_038529.1 Eothenomys miletus hantavirus LX309
 
 **_Input_**
 
-```python
-update_tree('demo_data/accession_organism.txt', 'demo_data/tree_ufb.treefile', 'demo_data/modified_tree.treefile')
-```
-
-Input:
 1. input txt file with the list of accession numbers and organisms names
 2. input tree file
 3. output modified tree
+
+```python
+update_tree('demo_data/accession_organism.txt', 'demo_data/tree_ufb.treefile', 'demo_data/modified_tree.treefile')
+```
 
 **_Output_**
 
@@ -246,14 +248,13 @@ Modified treefile contains accession numbers and organisms names. It makes more 
 
 **_Input_**
 
-```python
-get_hosts('iljapopov17@gmail.com', 'demo_data/accession_numbers.txt', 'demo_data/accession_host.txt')
-```
-
-Input:
 1. email
 2. input txt file with the list of accession numbers
 3. output file
+
+```python
+get_hosts('iljapopov17@gmail.com', 'demo_data/accession_numbers.txt', 'demo_data/accession_host.txt')
+```
 
 **_Output_**
 
@@ -280,14 +281,13 @@ NC_038529.1 Eothenomys miletus
 
 **_Input_**
 
-```python
-get_hosts_orders('iljapopov17@gmail.com', 'demo_data/accession_host.txt', 'demo_data/accession_order.txt')
-```
-
-Input:
 1. email
 2. input txt file with the list of accession numbers and hosts
 3. output file
+
+```python
+get_hosts_orders('iljapopov17@gmail.com', 'demo_data/accession_host.txt', 'demo_data/accession_order.txt')
+```
 
 **_Output_**
 
@@ -352,17 +352,16 @@ Interactive window will open and will ask to set HEX codes for each unique order
 
 **_Input_**
 
+1. input txt file with the list of accession numbers and organisms names
+2. input txt file with the list of accession numbers and phylogenetic order of microorganism host
+3. output file
+4. manually created color map
+
 ```python
 # Example usage:
 # To use with a user-defined color map:
 get_itol_dataset("demo_data/accession_organism.txt", "demo_data/accession_order.txt", "demo_data/dataset_for_iTOL.txt", color_map)
 ```
-
-Input:
-1. input txt file with the list of accession numbers and organisms names
-2. input txt file with the list of accession numbers and phylogenetic order of microorganism host
-3. output file
-4. manually created color map
 
 **_Output_**
 
@@ -395,8 +394,6 @@ NC_034519.1 Orthohantavirus khabarovskense	#0ca20c	Rodentia
 
 <img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/second%20tree.jpg" width="75%">
 
-https://itol.embl.de/export/95255816295731714078181
-
 _Fig 2. Second tree. With annotation info containing organisms names and manually adjusted colors indicating hosts phylogenetic order_
 
 This is the best tree easily made with DSTU software
@@ -411,14 +408,13 @@ It can be seen that in original version authors did annotation manually and they
 
 **_Input_**
 
-```python
-get_itol_dataset("demo_data/accession_organism.txt", "demo_data/accession_order.txt", "demo_data/dataset_for_iTOL_2.txt")
-```
-
-Input:
 1. input txt file with the list of accession numbers and organisms names
 2. input txt file with the list of accession numbers and phylogenetic order of microorganism host
 3. output file
+
+```python
+get_itol_dataset("demo_data/accession_organism.txt", "demo_data/accession_order.txt", "demo_data/dataset_for_iTOL_2.txt")
+```
 
 **_Output_**
 
@@ -450,8 +446,6 @@ NC_034519.1 Orthohantavirus khabarovskense	#e31342	Rodentia
 3. Upload `demo_data/dataset_for_iTOL_2.txt` as the annotation dataset
 
 <img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/third%20tree.jpg" width="75%">
-
-https://itol.embl.de/export/95255816343181714079366
 
 _Fig 3. Third tree. With annotation info containing organisms names and randomly generated colors indicating hosts phylogenetic order_
 
