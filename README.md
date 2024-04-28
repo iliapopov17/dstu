@@ -4,7 +4,7 @@
 
 |The Good|The Bad|The Ugly|
 |--------|-------|--------|
-|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/second%20tree.png" width="100%">|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/third%20tree.png" width="100%">|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/first%20tree.png" width="100%">|
+|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/second%20tree.jpg" width="100%">|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/third%20tree.jpg" width="100%">|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/first%20tree.jpg" width="100%">|
 
 DSTU allows easy and simple annotation of phylogenetic trees. The best tree contains information about the hosts from which the virus was isolated and the full names of the viruses. The so-so tree contains the same information, but is colour annotated with randomly generated colours. The worst tree contains only accession numbers on its leaves.
 
@@ -140,7 +140,7 @@ The most important file is `demo_data/tree_ufb.treefile`. Upload it to iTOL for 
 
 _Figure 1. Reference tree from the original paper_
 
-<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/first%20tree.png" width="75%">
+<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/first%20tree.jpg" width="75%">
 
 _Figure 2. Naked phylogenetic tree_
 
@@ -386,7 +386,7 @@ NC_034519.1 Orthohantavirus khabarovskense	#0ca20c	Rodentia
 2. Upload `demo_data/modified_tree.treefile` file as the tree
 3. Upload `demo_data/dataset_for_iTOL.txt` as the annotation dataset
 
-<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/second%20tree.png" width="75%">
+<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/second%20tree.jpg" width="75%">
 
 https://itol.embl.de/export/95255816295731714078181
 
@@ -442,7 +442,7 @@ NC_034519.1 Orthohantavirus khabarovskense	#e31342	Rodentia
 2. Upload `demo_data/modified_tree.treefile` file as the tree
 3. Upload `demo_data/dataset_for_iTOL_2.txt` as the annotation dataset
 
-<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/third%20tree.png" width="75%">
+<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/third%20tree.jpg" width="75%">
 
 https://itol.embl.de/export/95255816343181714079366
 
