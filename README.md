@@ -1,3 +1,9 @@
+![Python3](https://img.shields.io/badge/Language-Python3-steelblue)
+![Biopython](https://img.shields.io/badge/Dependecie-Biopython-steelblue)
+![Pandas](https://img.shields.io/badge/Dependecie-Pandas-steelblue)
+![OS](https://img.shields.io/badge/OS-_Windows_|_Mac_|_Linux-steelblue)
+![License](https://img.shields.io/badge/License-MIT-steelblue)
+
 <img src="https://github.com/iliapopov17/dstu/blob/main/imgs/DSTU%20logo%20light%20theme.png#gh-light-mode-only" width = 50%/>
 <img src="https://github.com/iliapopov17/dstu/blob/main/imgs/DSTU%20logo%20dark%20theme.png#gh-dark-mode-only" width = 50%/>
 
