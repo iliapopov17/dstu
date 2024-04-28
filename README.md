@@ -7,7 +7,7 @@
 <img src="https://github.com/iliapopov17/dstu/blob/main/imgs/DSTU%20logo%20light%20theme.png#gh-light-mode-only" width = 50%/>
 <img src="https://github.com/iliapopov17/dstu/blob/main/imgs/DSTU%20logo%20dark%20theme.png#gh-dark-mode-only" width = 50%/>
 
-> Detailed Sequences for Trees Unblemished (DSTU) simplifies phylogenetic tree creation in microbiology and virology by facilitating sequence downloads from NCBI GenBank using accession numbers. It also reinstates organism names in trees constructed with IQ-TREE, retrieves host information about microorganisms, and prepares annotation datasets for iTOL.
+> Detailed Sequences for Trees Unblemished (DSTU) simplifies phylogenetic tree creation in microbiology and virology by facilitating sequence downloads from NCBI GenBank using accession numbers. It also reinstates organism names in trees constructed with IQ-TREE, retrieves host information about microorganisms, and prepares annotation datasets for further visualization in iTOL.
 
 |The Good 😎|The Bad 😒|The Ugly 🚮|
 |--------|-------|--------|
@@ -22,9 +22,9 @@ DSTU allows easy and simple annotation of phylogenetic trees. See the examples a
 ### Sequence Downloading
 - Facilitates the retrieval of sequences from NCBI GenBank using specified accession numbers.
 ### Organism Name Reintegration
-- Enhances IQ-TREE constructed phylogenetic trees by replacing accession numbers with the corresponding organism names for clarity and context.
+- Enhances IQ-TREE constructed trees by replacing accession numbers with the corresponding organism names for clarity and context.
 ### Host Information Retrieval
-- Gathers comprehensive host data for each microorganism, including the host's phylogenetic order.
+- Gathers host data for each microorganism, including the host's taxonomic order.
 ### Annotation Dataset Preparation for iTOL
 - Utilizes the collected host information to prepare detailed annotation datasets, optimizing visualization in iTOL.
 
@@ -353,7 +353,7 @@ Interactive window will open and will ask to set HEX codes for each unique order
 **_Input_**
 
 1. input txt file with the list of accession numbers and organisms names
-2. input txt file with the list of accession numbers and phylogenetic order of microorganism host
+2. input txt file with the list of accession numbers and taxonomic order of microorganism host
 3. output file
 4. manually created color map
 
@@ -394,7 +394,7 @@ NC_034519.1 Orthohantavirus khabarovskense	#0ca20c	Rodentia
 
 <img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/second%20tree.jpg" width="75%">
 
-_Fig 3. Second tree. With annotation info containing organisms names and manually adjusted colors indicating hosts phylogenetic order_
+_Fig 3. Second tree. With annotation info containing organisms names and manually adjusted colors indicating hosts taxonomic order_
 
 This is the best tree easily made with DSTU software
 
@@ -409,7 +409,7 @@ It can be seen that in original version authors did annotation manually and they
 **_Input_**
 
 1. input txt file with the list of accession numbers and organisms names
-2. input txt file with the list of accession numbers and phylogenetic order of microorganism host
+2. input txt file with the list of accession numbers and taxonomic order of microorganism host
 3. output file
 
 ```python
@@ -447,7 +447,7 @@ NC_034519.1 Orthohantavirus khabarovskense	#e31342	Rodentia
 
 <img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/third%20tree.jpg" width="75%">
 
-_Fig 4. Third tree. With annotation info containing organisms names and randomly generated colors indicating hosts phylogenetic order_
+_Fig 4. Third tree. With annotation info containing organisms names and randomly generated colors indicating hosts taxonomic order_
 
 In this case random generation played a bad joke! Almost every color is the same. It will be much more convenient to adjust color map manually.
 
