@@ -1,4 +1,5 @@
-# Detailed Sequences for Trees Unblemished
+<img src="https://github.com/iliapopov17/dstu/blob/main/imgs/DSTU%20logo%20light%20theme.png#gh-light-mode-only" width = 50%/>
+<img src="https://github.com/iliapopov17/dstu/blob/main/imgs/DSTU%20logo%20dark%20theme.png#gh-dark-mode-only" width = 50%/>
 
 > Detailed Sequences for Trees Unblemished (DSTU) simplifies phylogenetic tree creation in microbiology and virology by facilitating sequence downloads from NCBI GenBank using accession numbers. It also reinstates organism names in trees constructed with IQ-TREE, retrieves host information about microorganisms, and prepares annotation datasets for iTOL.
 
