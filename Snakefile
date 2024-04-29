@@ -1,10 +1,15 @@
+import os
+
+# Set default path if not provided
+DATA_PATH = config.get('data_path', 'genbank_sequences')
+
 rule all:
     input:
         "demo_data/tree_ufb.treefile"
 
 rule concatenate_fasta:
     input:
-        expand("genbank_sequences/{{sample}}.fasta", sample=glob_wildcards("genbank_sequences/{sample}.fasta").sample)
+        lambda wildcards: expand(os.path.join(DATA_PATH, "{{sample}}.fasta"), sample=glob_wildcards(os.path.join(DATA_PATH, "{sample}.fasta")).sample)
     output:
         "demo_data/all_seqs.fa"
     shell:
@@ -18,15 +23,7 @@ rule mafft_alignment:
     shell:
         "mafft --auto {input} > {output}"
 
-rule filtering:
-    input:
-        ""
-    output:
-        ""
-    shell:
-        ""
-
-rule model_finder:
+rule iqtree_model_finding:
     input:
         "demo_data/all_seqs_mafft.fa"
     output:

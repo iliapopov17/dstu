@@ -2,6 +2,7 @@ import os
 import random
 from Bio import Entrez, SeqIO
 import pandas as pd
+import subprocess
 
 
 def get_sequences(email, file_path, output_dir):
@@ -371,3 +372,34 @@ def get_itol_dataset(organism_file, order_file, output_file, color_map=None):
             file.write(line + "\n")
 
     print("The request has been fulfilled.")
+
+
+def build_tree(data_path):
+    try:
+        # Build the command as a list of arguments
+        command = [
+            "snakemake",
+            "--cores",
+            "1",  # Specifies the number of cores to use
+            "--config",
+            f"data_path={data_path}",  # Passes the data path to Snakemake
+        ]
+
+        # Run the command
+        result = subprocess.run(command, check=True, capture_output=True, text=True)
+
+        # Print the stdout and stderr of the command
+        print("Output:\n", result.stdout)
+        print("Errors:\n", result.stderr)
+
+    except subprocess.CalledProcessError as e:
+        # Handle errors in the subprocess
+        print("Error running Snakemake:")
+        print(e)
+        print("Return code:", e.returncode)
+        print("Output:\n", e.stdout)
+        print("Errors:\n", e.stderr)
+
+
+# Example of how to use the function
+build_tree("/path/to/fasta/files")
