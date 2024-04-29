@@ -202,9 +202,6 @@ def get_hosts(email, input_filename, output_filename):
     print(f"The request has been fulfilled.\nFile saved to {output_filename}")
 
 
-from Bio import Entrez
-
-
 def get_order(species_name, email):
     """
     Fetches the taxonomic order for a given species name using Entrez,
