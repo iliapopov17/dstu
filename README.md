@@ -9,6 +9,14 @@
 
 > Detailed Sequences for Trees Unblemished (DSTU) simplifies phylogenetic tree creation in microbiology and virology by facilitating sequence downloads from NCBI GenBank using accession numbers. It also reinstates organism names in trees constructed with IQ-TREE, retrieves host information about microorganisms, and prepares annotation datasets for further visualization in iTOL.
 
+## Table of contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage Guide](#usage-guide)
+- [Contributing](#contributing)
+- [Contact](#contact)
+
 |The Good 😎|The Bad 😒|The Ugly 🚮|
 |--------|-------|--------|
 |<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/second%20tree.jpg" width="100%">|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/third%20tree.jpg" width="100%">|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/first%20tree.jpg" width="100%">|
@@ -33,11 +41,11 @@ DSTU allows easy and simple annotation of phylogenetic trees. See the examples a
 > I plan to finish all the features of this tool and publish it to `conda` oneday!
 
 ```bash
-wget https://github.com/iliapopov17/dstu/releases/download/v0.5.0-alpha/DSTU.py
+git clone git@github.com:iliapopov17/dstu.git && cd dstu
 ```
 
 ```bash
-pip install biopython
+pip install -r requirements.txt
 ```
 
 ## Usage Guide
@@ -46,23 +54,12 @@ pip install biopython
 
 Demonstrational data is based on the recent paper about identifying novel hantavirus in bats
 
-### Import modules
+### Import module
 
 **_Input_**
 
 ```python
 from DSTU import *
-```
-
-Further we will need this short function:
-
-```python
-def print_first_5_lines(filename):
-    with open(filename, 'r') as file:
-        for i, line in enumerate(file):
-            if i >= 5:
-                break
-            print(line.strip())
 ```
 
 This function has no sense regarding DSTU tool. It will be used to demonstrate file contents.
@@ -72,7 +69,7 @@ To use DSTU user must have `accession numbers.txt` file. It must look like this:
 **_Input_**
 
 ```python
-print_first_5_lines('demo_data/accession_numbers.txt')
+! head -5 demo_data/accession_numbers.txt
 ```
 
 **_Output_**
@@ -184,7 +181,7 @@ File saved to demo_data/accession_organism.txt
 **_Input_**
 
 ```python
-print_first_5_lines('demo_data/accession_organism.txt')
+! head -5 demo_data/accession_organism.txt
 ```
 
 **_Output_**
@@ -217,10 +214,8 @@ File saved to demo_data/accession_organism.txt
 **_Input_**
 
 ```python
-print_first_5_lines('demo_data/tree_ufb.treefile')
+! head demo_data/tree_ufb.treefile
 ```
-
-I know it was a stupid idea to read first 5 lines in a tree file... Anyway. It is made in demonstrational purposes.
 
 **_Output_**
 
@@ -233,7 +228,7 @@ Usual treefile contains only accession numbers. They cannot say anything.
 **_Input_**
 
 ```python
-print_first_5_lines('demo_data/modified_tree.treefile')
+! head demo_data/modified_tree.treefile
 ```
 
 **_Output_**
@@ -266,7 +261,7 @@ File saved to demo_data/accession_host.txt
 **_Input_**
 
 ```python
-print_first_5_lines('demo_data/accession_host.txt')
+! head -5 demo_data/accession_host.txt
 ```
 
 **_Output_**
@@ -303,7 +298,7 @@ Sometimes this function prints:
 **_Input_**
 
 ```python
-print_first_5_lines('demo_data/accession_order.txt')
+! head -5 demo_data/accession_order.txt
 ```
 
 **_Output_**
@@ -373,7 +368,7 @@ The request has been fulfilled.
 **_Input_**
 
 ```python
-print_first_5_lines('demo_data/dataset_for_iTOL.txt')
+! head -5 demo_data/dataset_for_iTOL.txt
 ```
 
 **_Output_**
@@ -426,7 +421,7 @@ The request has been fulfilled.
 **_Input_**
 
 ```python
-print_first_5_lines('demo_data/dataset_for_iTOL_2.txt')
+! head -5 demo_data/dataset_for_iTOL_2.txt
 ```
 
 **_Output_**
