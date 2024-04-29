@@ -1,0 +1,2 @@
+Finish snakemake pipeline
+Wrap snakemake to the `def build_tree()` function
