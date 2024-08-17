@@ -54,7 +54,7 @@ pip install -r requirements.txt
 
 Demonstrational data is based on the recent paper about identifying novel hantavirus in bats
 
-🔗 Visit [DSTU tutorial](https://iliapopov17.github.io/dstu/) web page
+🔗 Visit [DSTU wiki](https://github.com/iliapopov17/dstu/wiki) page
 
 ## Contributing
 Contributions are welcome! If you have any ideas, bug fixes, or enhancements, feel free to open an issue or submit a pull request.
