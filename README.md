@@ -4,10 +4,12 @@
 ![OS](https://img.shields.io/badge/OS-_Windows_|_Mac_|_Linux-steelblue)
 ![License](https://img.shields.io/badge/License-MIT-steelblue)
 
-<img src="https://github.com/iliapopov17/dstu/blob/main/imgs/DSTU_logo_light.png#gh-light-mode-only" width = 50%/>
-<img src="https://github.com/iliapopov17/dstu/blob/main/imgs/DSTU_logo_dark.png#gh-dark-mode-only" width = 50%/>
+<img src="https://github.com/iliapopov17/phyloki/blob/main/imgs/phyloki_logo_light.png#gh-light-mode-only" width = 50%/>
+<img src="https://github.com/iliapopov17/phyloki/blob/main/imgs/phyloki_logo_dark.png#gh-dark-mode-only" width = 50%/>
 
-> Detailed Sequences for Trees Unblemished (DSTU) simplifies phylogenetic tree creation in microbiology and virology by facilitating sequence downloads from NCBI GenBank using accession numbers. It also reinstates organism names in trees constructed with IQ-TREE, retrieves host information about microorganisms, and prepares annotation datasets for further visualization in iTOL.
+**THIS TOOL WILL BE REWRITTEN COMPLETELY TO WORK LOCALLY**
+
+> Phyloki simplifies phylogenetic tree creation in microbiology and virology by facilitating sequence downloads from NCBI GenBank using accession numbers. It also reinstates organism names in trees constructed with IQ-TREE, retrieves host information about microorganisms, and prepares annotation datasets for further visualization in iTOL.
 
 ## Table of contents
 
@@ -21,7 +23,7 @@
 |--------|-------|--------|
 |<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/second%20tree.jpg" width="100%">|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/third%20tree.jpg" width="100%">|<img src="https://github.com/iliapopov17/Detailed-Sequences-for-Trees-Unblemished/blob/main/imgs/first%20tree.jpg" width="100%">|
 
-DSTU allows easy and simple annotation of phylogenetic trees. See the examples above:
+Phyloki allows easy and simple annotation of phylogenetic trees. See the examples above:
 - The best tree contains information about the hosts from which the virus was isolated and the full names of the viruses.
 - The so-so tree contains the same information, but is colour annotated with randomly generated colours.
 - The worst tree contains only accession numbers on its leaves.
@@ -41,7 +43,7 @@ DSTU allows easy and simple annotation of phylogenetic trees. See the examples a
 > I plan to finish all the features of this tool and publish it to `conda` oneday!
 
 ```bash
-git clone git@github.com:iliapopov17/dstu.git && cd dstu
+git clone git@github.com:iliapopov17/phyloki.git && cd phyloki
 ```
 
 ```bash
@@ -54,7 +56,7 @@ pip install -r requirements.txt
 
 Demonstrational data is based on the recent paper about identifying novel hantavirus in bats
 
-🔗 Visit [DSTU wiki](https://github.com/iliapopov17/dstu/wiki) page
+🔗 Visit [Phyloki wiki](https://github.com/iliapopov17/phyloki/wiki) page
 
 ## Contributing
 Contributions are welcome! If you have any ideas, bug fixes, or enhancements, feel free to open an issue or submit a pull request.
